@@ -26,6 +26,7 @@ p.justificado{
         margin: 0 auto; /* Centra la imagen horizontalmente */
         max-width: 100%; /* Evita que la imagen sea más grande que su contenedor */
         height: auto; /* Mantiene la proporción de la imagen */
+        border-radius: 8px;
     }
 
     .centrar-contenedor {
