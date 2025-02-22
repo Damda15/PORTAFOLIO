@@ -1,3 +1,9 @@
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
 
 .centrado {
     text-align: center; /* Centra el texto horizontalmente */
@@ -6,8 +12,11 @@
 body{ /*background-color: #e5f8f9;*/
     background-image: url("it.webp");
      color: #f0f0f0;
+     margin: 50px; /* Margen fuera del borde, separa el párrafo de otros elementos */
+    padding: 30px; /* Relleno dentro del borde, crea espacio entre el borde y el contenido */
+    border: 8px solid #002f4b49; /* Borde de 5px con color azul */
     }
-span{ color: #f7f7f7;
+span{ color: #ffb005;
     font-weight: bold;
     text-shadow: 2px 2px 5px rgba(248, 248, 248, 0.3);
     }
@@ -23,10 +32,11 @@ p.justificado{
 
  .imagen-centrada {
         display: block; /* Convierte la imagen en un bloque para poder aplicar margin */
-        margin: 0 auto; /* Centra la imagen horizontalmente */
+        margin: auto; /* Centra la imagen horizontalmente */
         max-width: 100%; /* Evita que la imagen sea más grande que su contenedor */
         height: auto; /* Mantiene la proporción de la imagen */
-        border-radius: 8px;
+        border-radius: 830px;
+        padding: 30px;
     }
 
     .centrar-contenedor {
