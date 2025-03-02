@@ -4,121 +4,51 @@
 }
 
 
-body{ 
-    background-color: #000000;
-    color:#f0f0f0;
-    margin:30px; /* Margen fuera del borde, separa el párrafo de otros elementos */
-    padding:10px; /* Relleno dentro del borde, crea espacio entre el borde y el contenido */
+.centrado {
+    text-align: center; /* Centra el texto horizontalmente */
+}
+
+body{ /*background-color: #e5f8f9;*/
+    background-image: url("./assets/it.webp");
+     color: #f0f0f0;
+     margin: 50px; /* Margen fuera del borde, separa el párrafo de otros elementos */
+    padding: 30px; /* Relleno dentro del borde, crea espacio entre el borde y el contenido */
+    border: 8px solid #002f4b49; /* Borde de 5px con color azul */
+    }
+span{ color: #ffb005;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(248, 248, 248, 0.3);
+    }
+    p {
+        font-size: 19px
+    }
+p.justificado{
+        text-align: justify;
+        max-width: 800px; /* Ajusta el ancho del texto */
+        margin: 0 auto; /* Centra el párrafo en la página */
+        line-height: 1.6; /* Espaciado entre líneas para mejorar la lectura */
     }
 
+ .imagen-centrada {
+        display: block; /* Convierte la imagen en un bloque para poder aplicar margin */
+        margin: auto; /* Centra la imagen horizontalmente */
+        max-width: 100%; /* Evita que la imagen sea más grande que su contenedor */
+        height: auto; /* Mantiene la proporción de la imagen */
+        border-radius: 830px;
+        padding: 30px;
+    }
 
-.container_presentacion{
-
-    display: flex;
-    flex-direction: column; /* Acomoda los elementos en columna */
-    align-items: center; /* Centra los elementos horizontalmente */
-    text-align: center; /* Centra el texto dentro del contenedor */
-    width: 100%; /* Ocupar todo el ancho disponible */
-    max-width: 800px; /* Ajusta el ancho máximo si lo deseas */
-    margin: 0 auto; /* Centra el contenedor */
-
-}
-
-
-.presentacion_contenido_titulo{
-    font-size: 40px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    text-align: center;
+    .centrar-contenedor {
+        text-align: center; /* Centra el texto dentro del div */
+    }
     
-}
-
-
-.presentacion_contenido_titulo_resaltado{
-    color: aqua;
-
-}
-
-
-.presentacion_contenido_texto{
-    font-size: 24px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-align: justify;
-
-}
-
-.imagen-centrada {
-
-    max-width: 100%; /* Evita que la imagen sea más grande que su contenedor */
-    height: auto; /* Mantiene la proporción de la imagen */
-    border-radius: 16%;
-}
-
-
-.presentacion_contenido_enlaces{
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 24;
-    font-weight: 400;
-    flex-direction: column;
-
-}
-
-.presentacion_contenido_enlaces_subtitulo{
-    text-align: center;
-    justify-content: space-evenly;
-    gap: 32px;
-
-
-}
-
-.enlace{
-    width: 378px; /*ancho del elemento*/
-    text-align: center; /*centrar el texto dentro del elemento*/
-    border: 3px solid; /*borde solido de 3px*/
-    border-color: aqua;
-    border-radius: 8px;
-    font-size: 20px;
-    font-weight: 400;
-    padding: 21.5px 0;
-    font-family: "Montserrat", serif;
-    color:#f6f6f6;
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-   
-
-}
-
-.enlace:hover{
-    background-color: yellowgreen;
-}
-
-
-.Header{
-    background-color: aqua;
-    padding-top: 2%;
-    padding-right: 0;
-    padding-bottom: 0;
-    padding-left: 8%;
-
-
-}
-
-.Header__menu{
-    font-size: 20px;
-    text-align: justify;
-  
-
-}
-.Header__menu_link{
-
-}
-
-.Footer{
-    color: #000000;
-    background-color: aqua;
-    padding: 24px;
-    text-align: center;
-    font-weight: 400;
-
+    .enlace {
+        text-decoration: none; /* Opcional, para quitar el subrayado del enlace */
+        color: #007bff; /* Opcional, cambia el color del enlace */
+    }
+    
+    a{ background-color: #f6f6f6;
+    border: 3px solid #22D4FD;
+    padding: 4px;
+    font-weight: 700;
 }
