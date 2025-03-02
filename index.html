@@ -6,27 +6,50 @@
     <title>PORTAFOLIO</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <header> </header>
-    <main>
-        <h1 class="centrado"> Construyendo mi Futuro en el Mundo Digital </h1>
-            <h2 class="centrado"><span>Entre la Ciencia y la Tecnología</span></h2>
 
-        <p class="justificado">¡Hola! Soy Damelis Granadillo, 
+
+<body>
+    <header class="Header"> 
+        <nav class="Header__menu">
+            <a class="Header__menu_link" href="index.html">Home</a>
+            <a class="Header__menu_link" href="about.html">Sobre mi</a>
+        </nav>
+    </header>
+
+    <main class="container_presentacion">
+
+        <section class="presentacion_contenido">
+            
+            <h1 class="presentacion_contenido_titulo"> Construyendo mi Futuro en el Mundo Digital </h1>
+            <h2 class="presentacion_contenido_titulo"><span class="presentacion_contenido_titulo_resaltado">Entre la Ciencia y la Tecnología</span></h2>
+        
+        <p class="presentacion_contenido_texto">¡Hola! Soy Damelis Granadillo, 
             histotecnóloga en proceso de reinvención hacia el mundo del desarrollo web.
              Actualmente, estoy dando mis primeros pasos en programación. 
               Explorando HTML y CSS para construir soluciones digitales. 
               Este portafolio es mi espacio para compartir mis avances, proyectos y aprendizajes en este nuevo camino.
                ¡Acompáñame en esta aventura tecnológica!</p>
 
-        <img src="FOTO_DANIELA.jpg" alt="Imagen de Damelis granadillo" class="imagen-centrada">
+        </section>
+
+        <img src="./assets/FOTO_DANIELA.jpg" alt="Imagen de Damelis granadillo" class="imagen-centrada">
         
-        <div class="centrar-contenedor">
-        <a href="https://github.com/Damda15" class="enlace">GitHub</a>
-    </div>
+        <div class="presentacion_contenido_enlaces">
+            
+            <h2 class="presentacion_contenido_enlaces_subtitulo">Accede a mis Redes</h2>
+        <a href="https://github.com/Damda15" class="enlace"> <img src="./assets/github.png"> GitHub  </a>
+        <a href="https://github.com/Damda15" class="enlace"> <img src="./assets/instagram.png"> Instagram</a>
+        <a href="https://github.com/Damda15" class="enlace"> <img src="./assets/linkedin.png">LinkeIn</a>
+    | 
+  </div>
         
     </main>
-    <footer> </footer>
+
+
+
+    <footer class="Footer">
+        <p>Desarrollado por Daniela Rovero</p>
+    </footer>
     
 
 </body>
