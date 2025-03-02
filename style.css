@@ -4,18 +4,21 @@
 }
 
 
-.centrado {
+.contenido_titulo {
     text-align: center; /* Centra el texto horizontalmente */
 }
 
 body{ /*background-color: #e5f8f9;*/
     background-image: url("./assets/it.webp");
-     color: #f0f0f0;
-     margin: 50px; /* Margen fuera del borde, separa el párrafo de otros elementos */
+    color: #f0f0f0;
+    /*margin: 16px; /* Margen fuera del borde, separa el párrafo de otros elementos */
     padding: 30px; /* Relleno dentro del borde, crea espacio entre el borde y el contenido */
-    border: 8px solid #002f4b49; /* Borde de 5px con color azul */
+    /*border: 8px solid #002f4b49; /* Borde de 5px con color azul */
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
     }
-span{ color: #ffb005;
+span{ color: #f5b120;
     font-weight: bold;
     text-shadow: 2px 2px 5px rgba(248, 248, 248, 0.3);
     }
@@ -34,7 +37,7 @@ p.justificado{
         margin: auto; /* Centra la imagen horizontalmente */
         max-width: 100%; /* Evita que la imagen sea más grande que su contenedor */
         height: auto; /* Mantiene la proporción de la imagen */
-        border-radius: 830px;
+        border-radius: 60px;
         padding: 30px;
     }
 
@@ -45,10 +48,45 @@ p.justificado{
     .enlace {
         text-decoration: none; /* Opcional, para quitar el subrayado del enlace */
         color: #007bff; /* Opcional, cambia el color del enlace */
+        background-color: #160d0d;
+        border: 3px solid #22D4FD;
+        padding: 6px 30px 6px 30px;
+        font-weight: 700;
+        text-align: center;
+        
+    }
+
+    .enlace:hover{
+        background-color: yellowgreen;
     }
     
-    a{ background-color: #f6f6f6;
-    border: 3px solid #22D4FD;
-    padding: 4px;
+    
+.Header{
+    color: aliceblue;
+    display: flex;
+    gap: 20px;
+    text-decoration: none;
+    padding-top: 6%;
+    padding-left: 1%;
+    align-items: flex-end;
+    margin-top: 50px;
+    
+
+}
+
+.Header:hover{
+    color:greenyellow;
+}
+
+
+.Footer{
+    color: #ffffff;
+    background-color: #000000;
     font-weight: 700;
+    text-align: center;
+    padding:8px
+    
+    
+    
+
 }
