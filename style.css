@@ -10,7 +10,7 @@
 }
 
 body{ /*background-color: #e5f8f9;*/
-    background-image: url("it.webp");
+    background-image: url("./assets/it.webp");
      color: #f0f0f0;
      margin: 50px; /* Margen fuera del borde, separa el párrafo de otros elementos */
     padding: 30px; /* Relleno dentro del borde, crea espacio entre el borde y el contenido */
@@ -46,10 +46,16 @@ p.justificado{
     .enlace {
         text-decoration: none; /* Opcional, para quitar el subrayado del enlace */
         color: #007bff; /* Opcional, cambia el color del enlace */
+        display: flex;
+        justify-items: center;
+        flex-direction: column;
+        background-color: #000000;
+        border: 3px solid #22D4FD;
+        padding: 5px 21px;
+        font-weight: 700;
+        width: 370px;
     }
     
-    a{ background-color: #f6f6f6;
-    border: 3px solid #22D4FD;
-    padding: 4px;
-    font-weight: 700;
+    a{
+   
 }
