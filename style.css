@@ -16,8 +16,12 @@ body{ /*background-color: #e5f8f9;*/
     /*border: 8px solid #002f4b49; /* Borde de 5px con color azul */
     display: flex;
     flex-direction: column;
-    gap: 60px;
+    gap: 80px;
+    margin-left: 10%;
+    margin-top: 4%;
+
     }
+
 span{ color: #f5b120;
     font-weight: bold;
     text-shadow: 2px 2px 5px rgba(248, 248, 248, 0.3);
@@ -25,7 +29,7 @@ span{ color: #f5b120;
     p {
         font-size: 19px
     }
-p.justificado{
+.justificado{
         text-align: justify;
         max-width: 800px; /* Ajusta el ancho del texto */
         margin: 0 auto; /* Centra el párrafo en la página */
@@ -60,21 +64,26 @@ p.justificado{
         background-color: yellowgreen;
     }
     
-    
 .Header{
+    margin-left: 10%;
+
+}  
+.Header__menu_link{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 24px;
+    font-weight: 600;
     color: aliceblue;
-    display: flex;
-    gap: 20px;
     text-decoration:none;
     padding-top: 6%;
     padding-left: 5%;
     align-items: center
     
+    
 
 
 }
 
-.Header:hover{
+.Header a:hover{
     color:greenyellow;
 }
 
