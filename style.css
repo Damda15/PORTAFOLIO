@@ -4,60 +4,92 @@
 }
 
 
-.contenido_titulo {
-    text-align: center; /* Centra el texto horizontalmente */
+
+:root{
+
+    --color-primario:#ffffff;
+    --color-hover: #F2F6D0;
+    --color-destaque:#c710ff;
+    
 }
 
 body{ /*background-color: #e5f8f9;*/
     background-image: url("./assets/it.webp");
-    color: #f0f0f0;
-    /*margin: 16px; /* Margen fuera del borde, separa el párrafo de otros elementos */
+    color: var(--color-primario);
     padding: 30px; /* Relleno dentro del borde, crea espacio entre el borde y el contenido */
-    /*border: 8px solid #002f4b49; /* Borde de 5px con color azul */
     display: flex;
     flex-direction: column;
     gap: 80px;
-    margin-left: 10%;
     margin-top: 4%;
 
     }
 
-span{ color: #f5b120;
-    font-weight: bold;
-    text-shadow: 2px 2px 5px rgba(248, 248, 248, 0.3);
+.contenido{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+
+.contenido_titulo {
+        text-align: center; /* Centra el texto horizontalmente */
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 2rem;
     }
-    p {
-        font-size: 19px
-    }
-.justificado{
+
+
+.contenido_subtitulo{
+    text-align: center;
+    color: aqua;
+}
+
+.contenido_texto{
+        font-size: 1.5rem;
         text-align: justify;
         max-width: 800px; /* Ajusta el ancho del texto */
-        margin: 0 auto; /* Centra el párrafo en la página */
+        margin: auto; /* Centra el párrafo en la página */
         line-height: 1.6; /* Espaciado entre líneas para mejorar la lectura */
     }
 
- .imagen-centrada {
-        display: block; /* Convierte la imagen en un bloque para poder aplicar margin */
+ .presentacion_imagen {
+        
         margin: auto; /* Centra la imagen horizontalmente */
         max-width: 100%; /* Evita que la imagen sea más grande que su contenedor */
         height: auto; /* Mantiene la proporción de la imagen */
         border-radius: 60px;
-        padding: 30px;
+        
     }
 
-    .centrar-contenedor {
-        text-align: center; /* Centra el texto dentro del div */
+    .presentacion_enlaces {
+        display: flex; /* permite usar el flexbox*/
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        gap: 32px;
+        
+        
+    }
+
+    .presentacion__enlaces_subtitulo{
+        font-size: 1.5rem;
+        color: ;
     }
     
     .enlace {
-        text-decoration: none; /* Opcional, para quitar el subrayado del enlace */
-        color: #007bff; /* Opcional, cambia el color del enlace */
-        background-color: #160d0d;
-        border: 3px solid #22D4FD;
-        padding: 6px 30px 6px 30px;
-        font-weight: 700;
+        width: 50%;
         text-align: center;
-        
+        border: 3px solid;
+        border-color: var(--color-terciario);
+        border-radius: 8px;
+        font-size: 1.5rem;
+        font-weight: 600;
+        padding: 21.5px 0;
+        font-family: var(--fuente-Montserrat);
+        color: var(--color-secundario);
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        gap: 16px;
     }
 
     .enlace:hover{
@@ -91,11 +123,11 @@ span{ color: #f5b120;
 .Footer{
     color: #ffffff;
     background-color: #000000;
-    font-weight: 700;
-    text-align: center;
-    padding:8px
-    
-    
-    
+    font-weight: 400;
+    font-size: 1rem;
+    text-align:left;
+    padding:20px;
+    width: 100%;
+       
 
 }
